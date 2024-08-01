@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>switch</title>
+</head>
+<body>
+    <script>
+        // const user1 = 'admin'
+        // const user2 = 'user' 
+
+        // switch(user=prompt('Enter a username')){
+        //     case user1: 
+        //     document.write("<h1>Welcome to admin dashboard<h1>")
+        //     break
+        //     default: 
+        //     document.write("invalid input")
+        //     break
+        //     case user2: 
+        //     document.write("<h1>welcome to user board</h1>")
+        //     break
+        // }
+
+// ATM 
+        const pin = 1234
+        const userpin = parseInt(prompt("Enter pin mumber"))
+
+        switch(userpin){
+            case pin:
+                const value = parseInt(prompt("Welcome to ATM service \n 1. Fast Cash \n 2. Withdrawl \n 3. Balance inquiry \n 4. Cancel"))
+                switch(value){
+                    case 1:
+                        const fastvalue = parseInt(prompt("1. 1000 \n 2. 2000 \n 3. 5000 \n 4. 10000"))
+                        switch(fastvalue){
+                            case 1:
+                                alert("here is your cash 1000")
+                                break
+                            
+                            case 2:
+                                alert("here is your cash 2000")
+                                break
+                            
+                            case 3:
+                                alert("here is your cash 5000")
+                                break
+                            
+                             case 4:
+                                alert("here is your cash 10000")
+                                break
+                            default : 
+                            alert("invalid input")
+                        }
+                        break
+                        case 2: 
+                        const withvalue = parseInt(prompt("Enter the amount that you want to withdraw"))
+                        switch(withvalue){
+                            case withvalue: {
+                                alert(`Here is your cash ${withvalue}`)
+                            }
+                        }
+                        
+                }
+                    case 3: 
+                        alert("Your balance is xxxx")
+                    
+                    case 4: 
+                        alert("your transaction has been cancelled")
+                
+                break
+                default: 
+                alert("invalid pin")
+        }
+    </script>
+</body>
+</html>

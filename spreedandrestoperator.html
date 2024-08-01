@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //spreed operator
+        num= [1,2,3,4,5]
+        alpha = ['a','b','c','d']
+        mix = [...num,...alpha]
+        console.log(mix)
+
+        //rest operator
+        const fruit = (name1,...other)=>{
+            return`collection of fruits are ${other}`
+        }
+
+        const fruits = fruit('apple','mango','papaya','litchi')
+        document.write(fruits)
+
+    </script>
+</body>
+</html>

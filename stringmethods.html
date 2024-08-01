@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String methods</title>
+</head>
+<body>
+    <script>
+        const text ='we are studying javascript programming language and javascript is used for interactive web pages'
+
+        document.write(`${text} <br>`)
+        document.write(`${text[0]} <br>`)
+
+        // length gives total number of character present in the string 
+        document.write(`${text.length} <br>`)
+
+        // toUpperCase()
+        // toLowerCase()
+        document.write(`${text.toUpperCase()} <br>`)
+        document.write(`${text.toLowerCase()}<br>`)
+
+        //indexOf()-gives the index of particular word
+        document.write(`${text.indexOf('javascript')} <br>`)
+
+        //search()
+        document.write(`${text.search('javascript')}<br>`)
+
+        //lastIndexof()
+        document.write(`${text.lastIndexOf('javascript')}<br>`)
+
+        //splits from given string and puts comma , 
+        document.write(`${text.split('and')}<br>`)
+
+        //substring => certain part of string
+        //slice(start, end)
+        //substring(start, end)
+        //substr(start, length)
+
+        document.write(`${text.slice(1,20)} <br>`)
+        document.write(`${text.substring(1,20)}<br>`)
+        document.write(`${text.substr(5,20)}<br>`)
+
+       // replace()
+       document.write(`${text.replace('javascript','js')}<br>`)
+
+       //replaceAll
+       document.write(`${text.replaceAll('javascript','js')}<br>`)
+
+       //includes()-returns boolean value if the string includes given string
+       document.write(`${text.includes('javascript')}<br>`)
+
+       //trim()
+       const test = '     hello world     '
+       document.write(`${test.trim()}<br>`)
+
+
+
+    </script>
+</body>
+</html>

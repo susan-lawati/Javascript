@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>every</title>
+</head>
+<body>
+    <script>
+
+        //every return true if all the element in the array meet the condition
+        numbers = [1,2,3,4,5]
+        const check = numbers.every((num)=>{
+            if(num<=4){
+                return num
+            }
+        })
+        document.write(`${check}<br>`)
+        
+
+
+        //some() return true when any one element in the array meet the condition
+        numbers = [1,2,3,4,5]
+        const test = numbers.some((num)=>{
+            if(num<=4){
+                return num
+            }
+        })
+        document.write(`${test}<br>`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="div"></div>
+    <script>
+        const students = [
+            {name:'hari poudel', age:40},
+            {name:'ram basnet', age:30},
+            {name:'biren stha', age:35}
+        ]
+
+        //define the function
+        const showStudent=()=>{
+            setTimeout(()=>{
+                let result = ""
+                students.forEach(info=>{
+                    result+=`<ul>
+                        <li> ${info.name}</li>
+                        </ul>`
+                })
+                document.querySelector('div').innerHTML=`${result}`
+            }, 2000)
+        }
+
+        //call the function
+        // showStudent()
+
+        // const addStudent=newData=>{
+        //     setTimeout(()=>{
+        //         students.push(newData)
+        //     }, 6000)
+        // }
+
+        const addStudent=(newData, callback)=>{
+            return new Promise((resolve, reject)=>{
+                
+                students.push(newdata)
+                const error = false 
+                if (!error){
+                    resolve()
+
+                }else{
+                    reject("something is wrong")
+                }
+            },2000)
+
+            // setTimeout(() => {
+            //     students.push(newData)
+            // }, 6000);
+        }
+
+
+        const demoFunction=async()=>{
+        await addStudent({name:'bikesh gurung', age :50})
+        showStudent()
+
+        }
+        //call the function addStudent
+        demoFunction()
+
+        // .then()(showStudent)
+        // .catch()(err=>console.log(err))
+    </script>
+</body>
+</html>

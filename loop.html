@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop/iteration/repetation</title>
+</head>
+<body>
+    <pre>
+        i> for loop
+        ii> while loop
+        iii> do while loop
+        iv> for in loop
+        v> for of loop
+    </pre>
+
+    <script>
+        // // for loop 
+        // for (i=1; i<=10; i+=2){
+        //     document.write(`${i}<br>`)
+        // }
+
+        // //while loop
+        // let x =1
+        // while (x<=10){
+        //     document.write(`${x} &nbsp; `)
+        //     x+=2
+        // }
+
+        // //nested loop
+        // for (i=1; i<=5; i++){
+        //     for(j=1; j<=10; j++){
+        //         document.write(`<br>${i}x${j}=${i*j}<br>`)
+                
+        //     }
+        //     document.write("<hr>")
+        // }
+
+        // for loop inside while loop 
+        // document.write("for loop inside while loop")
+        // for(i=1; i<=3; i++){
+        //     let y=1
+        //     while(y<=5){
+        //         document.write(`<br>${i}x${y}=${i*y}`)
+        //         y+=1
+        //     }
+        //     document.write("<hr>")
+        // }
+        // // while loop inside while loop
+        // document.write("while loop inside while loop<br>")
+        // let x=4
+        // while(x<=6){
+        //     z=1
+        //     while(z<=5){
+        //         document.write(`${x}x${z}=${x*z}<br>`)
+        //         z+=1
+        //     }
+        //     x+=1
+        //     document.write("<hr>")
+        // }
+
+        // //while loop inside for loop
+        // document.write("while loop inside for loop<br>")
+        // let a=7
+        // while(a<=9){
+        //     for(b=1; b<=5; b++){
+        //         document.write(`${a}x${b}=${a*b}<br>`)
+        //     }
+        //     a+=1
+        //     document.write("<hr>")
+        // }
+
+        //do while loop
+        // let x=1
+        // do{
+        //     document.write(`${x}<br>`)
+        //     x+=1
+
+        // }
+        // while(x<=10)
+
+        //for in loop
+
+        const student = {
+            'fname':'Ram',
+            'lname':'Shrestha',
+            'age':28,
+            'sex': 'M'
+        }
+
+        fruits=['apple', 'papaya','dragon fruit']  
+
+        for (i in student){
+            document.write(`${student[i]}<br>`)
+
+        }
+
+        for(name in fruits){
+            document.write(`${fruits[name]}<br>`)
+        }
+
+        for(category of fruits){
+            document.write(`${category}<br>`)
+        }
+    </script>
+</body>
+</html>

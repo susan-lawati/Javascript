@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+        //array is used to store multiple data
+
+        student = ['Ram', 'Hari',12, 'Sita', 'Rita']
+        document.write(`${student}<br><hr>`)
+
+        //indexing
+        document.write(`${student[0]}<br>`)
+
+        //length
+        document.write(`${student.length}<br>`)
+
+        //.pop() used to remove data from end of array
+        student.pop()
+        document.write(`${student}<br>`)
+
+        //.push('value') is used to add data from end of array
+        student.push('3')
+        document.write(`${student}<br>`)
+        
+        //.shift() is used to remove data from beginning of array
+        student.shift()
+        document.write(`${student}<br>`)
+
+        //unshift() is used to add data in beginning of array
+        student.unshift('Biren')
+        document.write(`${student}<br>`)
+
+        //splice
+        //first value refers the position
+        //second value refers the no. of item to be removed
+        //third value refers
+        student.splice(2,1,'Ram','Aryan')
+        document.write(`${student}<br>`)
+
+        //sort() --> ascending order
+        //reverse()--> descending order
+        document.write(`${student.sort()}<br>`)
+        document.write(`${student.reverse()}<br>`)
+
+
+        //break and continue
+    </script>
+</body>
+</html>

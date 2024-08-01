@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+<body>
+    <!-- //function call -->
+    <button onmouseover="demo()" onmouseout="previous()"> hover for date</button> 
+    <h2> </h2>
+    <script>
+        // onclick, ondblclick, onsubmit, onmouseover, onmouseout, onkeyup, onkeydown, onpageload, 
+
+        const demo=()=>{
+            document.querySelector('h2').innerHTML = new Date()
+        }
+
+        const previous=()=>{
+            document.querySelector('h2').innerHTML = ''
+        }
+    </script>
+</body>
+</html>
